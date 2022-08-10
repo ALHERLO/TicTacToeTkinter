@@ -169,7 +169,7 @@ win_list = [
 ]
 
 sand = "#38b395"
-green = "black"
+green = "purple"
 FONT_NAME = "Courier"
 
 window = tkinter.Tk()
