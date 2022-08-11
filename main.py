@@ -27,7 +27,7 @@ def check_win():
         check2 = all(item in player2_moves for item in list)
         if check1:
             is_winner=True
-            turn_label.config(text="Player 1 Wins!! 🎉")
+            turn_label.config(text="Player 1 Wins!")
             print('Player 1 Wins')
             clicked = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -36,7 +36,7 @@ def check_win():
             is_winner = True
             print("Player 2 Wins")
             clicked = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-            turn_label.config(text="Player 2 Wins!! 🎉")
+            turn_label.config(text="Player 2 Wins!")
             break
 
 
