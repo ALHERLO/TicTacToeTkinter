@@ -237,4 +237,12 @@ canvas9.grid(padx=5, pady=5, column=2, row=2)
 my_button = tkinter.Button(text="RESET", pady=10,  bg='grey', fg='black', bd='0', command=reset_all, font=("Arial", 15, "italic"), highlightthickness=0)
 my_button.grid(column=0, row=5, columnspan=3)
 
+
+# New Canvas Button Added
+canvasButton = tkinter.Canvas(width=100, height=100, bg=sand,  highlightthickness=0)
+canvasButton.create_image(100, 112)
+textButton = canvas9.create_text(50, 50, text="Reset", fill="white", font=(FONT_NAME, 100, "bold"))
+canvasButton.grid(padx=5, pady=5, column=0, row=6, columnspan=3)
+
+
 window.mainloop()
