@@ -150,6 +150,9 @@ def reset_all():
     print('reset clicked')
     return
 
+def reset_button(event):
+    print('reset button clicked')
+    return
 
 #PLAYER 1 === X TRUE, PLAYER 2 ++ O FALSE
 is_winner=False
@@ -169,7 +172,7 @@ win_list = [
 ]
 
 sand = "#38b395"
-green = "purple"
+green = "navy"
 FONT_NAME = "Courier"
 
 window = tkinter.Tk()
@@ -242,6 +245,7 @@ my_button.grid(column=0, row=5, columnspan=3)
 canvasButton = tkinter.Canvas(width=100, height=100, bg=sand,  highlightthickness=0)
 canvasButton.create_image(100, 112)
 textButton = canvas9.create_text(50, 50, text="Reset", fill="white", font=(FONT_NAME, 100, "bold"))
+canvasButton.bind('<Button>', reset_button)
 canvasButton.grid(padx=5, pady=5, column=0, row=6, columnspan=3)
 
 
