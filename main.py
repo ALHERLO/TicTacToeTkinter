@@ -151,7 +151,7 @@ def reset_all():
     return
 
 def reset_button(event):
-    print('reset button clicked')
+    print('reset button clicked!')
     return
 
 #PLAYER 1 === X TRUE, PLAYER 2 ++ O FALSE
